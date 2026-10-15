@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mahdy — React Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="field"></div>
+
+    <nav>
+        <div class="wrap">
+            <a href="#" class="brand" id="homeLink"><span>AhmedMahdy.</span>dev</a>
+            <ul class="navlinks">
+                <li><a href="#about" data-nav>About</a></li>
+                <li><a href="#skills" data-nav>Skills</a></li>
+                <li><a href="#projects" data-nav>Projects</a></li>
+                <li><a href="#cp" data-nav>CP</a></li>
+                <li><a href="#contact" data-nav>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="wrap">
+        <div class="glow" id="glow"></div>
+        <div class="kicker">Portfolio — React Frontend Developer</div>
+        <h1>Ahmed Mahdy</h1>
+        <p class="role">Computer science student building toward React frontend development, with a
+            competitive-programming foundation in data structures and algorithms.</p>
+        <div class="links">
+            <a class="btn primary" href="https://www.linkedin.com/in/ahmed-mahdy--/" target="_blank"
+                rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/Ahmed530132" target="_blank" rel="noopener">GitHub</a>
+            <span class="btn copy-btn" id="copyBtn">Copy profile link</span>
+        </div>
+    </header>
+
+    <section id="about" class="about wrap reveal">
+        <h2>01 <span>/</span> about</h2>
+        <p>I'm a Computer Science student at Cairo University's Faculty of Computers and Artificial Intelligence,
+            currently in a Software Development course on the React Frontend Web Developer track — covering full-stack
+            web development alongside statistics and CS theory.</p>
+        <p>Outside coursework, I compete in collegiate programming contests, which is where most of my hands-on
+            problem-solving experience comes from. I'm now applying that same discipline to building frontend projects
+            with React.</p>
+    </section>
+
+    <section id="skills" class="wrap reveal">
+        <h2>02 <span>/</span> skills</h2>
+        <div class="grid">
+            <div class="skill">
+                <span class="cat">frontend</span>
+                <div class="items">React, HTML, CSS, JavaScript</div>
+            </div>
+            <div class="skill">
+                <span class="cat">programming</span>
+                <div class="items">C++, problem solving, data structures &amp; algorithms</div>
+            </div>
+            <div class="skill">
+                <span class="cat">coursework</span>
+                <div class="items">Full-stack web development, statistics, ethics &amp; professionalism</div>
+            </div>
+            <div class="skill">
+                <span class="cat">practice</span>
+                <div class="items">Codeforces, ICPC / ECPC contests</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="wrap reveal">
+        <h2>03 <span>/</span> projects</h2>
+        <div class="note"><strong>In progress:</strong> I'm early in my React track and don't have finished client-ready
+            projects yet. Below is what I'm actively building from my coursework — I'll swap these for live links as
+            they ship.</div>
+        <div class="projects">
+            <div class="project">
+                <div>
+                    <h3>React Frontend Track — coursework builds</h3>
+                    <p>Frontend applications built as part of the React Frontend Web Developer track: component-based
+                        UIs, state management, and API-driven pages.</p>
+                    <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span
+                            class="tag">CSS</span></div>
+                </div>
+                <span class="status">in progress</span>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Full-stack coursework project</h3>
+                    <p>End-to-end web app work from the full-stack portion of the course, covering both client and
+                        server sides.</p>
+                    <div class="tags"><span class="tag">Full-stack</span><span class="tag">Web dev</span></div>
+                </div>
+                <span class="status">in progress</span>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Competitive programming archive</h3>
+                    <p>Solutions and practice from Codeforces and ICPC/ECPC-style contests — the problem-solving base I
+                        bring into frontend logic and debugging.</p>
+                    <div class="tags"><span class="tag">C++</span><span class="tag">Algorithms</span></div>
+                </div>
+                <a class="btn" href="https://github.com/Ahmed530132" target="_blank" rel="noopener"
+                    style="padding:6px 14px; font-size:12px;">View on GitHub</a>
+            </div>
+        </div>
+
+        <div style="margin-top:32px;">
+            <div class="live-badge" style="margin-bottom:14px;">
+                <span class="live-dot"></span> pulled live from GitHub
+            </div>
+            <div class="projects" id="repoList">
+                <div class="project">
+                    <div>
+                        <p style="color:var(--ink-dim);">Loading repositories…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cp" class="wrap reveal">
+        <h2>04 <span>/</span> competitive programming</h2>
+        <div class="cp">
+            <div class="stat">
+                <div class="num">CF</div>
+                <div class="label">Codeforces handle: Ahmed-mahdy</div>
+            </div>
+            <div class="stat">
+                <div class="num">ICPC</div>
+                <div class="label">ICPC / ECPC contest participant</div>
+            </div>
+            <div class="stat">
+                <div class="num loading" id="repoCount">0</div>
+                <div class="label">Public repositories on GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="wrap reveal">
+        <div class="row">
+            <div>
+                <h2>05 <span>/</span> contact</h2>
+                <p>Open to freelance frontend work and internship opportunities. Reach out on LinkedIn or check my code
+                    on GitHub.</p>
+            </div>
+            <div class="footlinks">
+                <a class="btn primary" href="https://www.linkedin.com/in/ahmed-mahdy--/" target="_blank"
+                    rel="noopener">Message on LinkedIn</a>
+                <a class="btn" href="https://github.com/Ahmed530132" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
